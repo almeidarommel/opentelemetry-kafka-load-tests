@@ -39,15 +39,6 @@ spec:
         tls: true
         authentication:
           type: scram-sha-512
-    jvmOptions:
-      '-XX':
-        InitiatingHeapOccupancyPercent: 45
-        MaxGCPauseMillis: 200
-        UseG1GC: true
-        UseStringDeduplication: true
-      '-Xms': 4g
-      '-Xmx': 4g
-      gcLoggingEnabled: true
     metricsConfig:
       type: jmxPrometheusExporter
       valueFrom:
